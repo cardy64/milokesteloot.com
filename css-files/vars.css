@@ -2,8 +2,10 @@
     --icon-tray-columns: 5;
     --border: #202020 1px solid;
 
-    --box-deco-padding-vert: 25px;
-    --box-deco-padding-horiz: 30px;
+    --box-deco-padding-vert: 10px;
+    --box-deco-padding-horiz: 15px;
+    --box-deco-thick-padding-vert: 25px;
+    --box-deco-thick-padding-horiz: 30px;
 
     --featured-project-height: 200px;
 

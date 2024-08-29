@@ -29,3 +29,6 @@ body {
 .box-width-2 {
     width: var(--box-width-2);
 }
+.box-thick-padding {
+    padding: var(--box-deco-thick-padding-vert) var(--box-deco-thick-padding-horiz);
+}

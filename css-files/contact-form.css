@@ -1,5 +1,5 @@
 .contact-form {
-    padding: 10px 15px 15px;
+    padding-bottom: var(--box-deco-padding-horiz);
 }
 
 .contact-form > h1 {
