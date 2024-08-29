@@ -1,0 +1,46 @@
+.contact-form {
+    padding: 10px 15px 15px;
+}
+
+.contact-form > h1 {
+    margin-bottom: 15px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    color: var(--text-color);
+    height: 0;
+    z-index: 3;
+    transform: translateY(8px) translateX(8px);
+    transition: 0.4s;
+    user-select: none;
+}
+.form-group:has(.input:focus) > label, .form-group:has(.input:not(:placeholder-shown)) > label {
+    transition: 0.4s;
+    transform: translateY(-6px) translateX(8px);
+    font-size: 0.7rem;
+}
+.input {
+    border: var(--border);
+    background-color: var(--gray-med);
+    padding: 8px 8px;
+    border-radius: 3px;
+    color: white;
+    font-weight: 200;
+}
+.form-group:not(:last-child) .input {
+    height: 33px;
+    margin-bottom: 15px;
+    resize: none;
+    overflow: hidden;
+}
+.form-group:last-child .input {
+    resize: vertical;
+    height: 100px;
+    min-height: 33px;
+}
+.input:focus {
+    outline: none;
+}

@@ -1,0 +1,25 @@
+.box-deco:has(.icon-tray) {
+    padding-bottom: var(--box-deco-padding-horiz);
+}
+.icon-tray {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(var(--icon-tray-columns), 1fr);
+    grid-gap: 10px;
+}
+.icon-tray:not(:last-of-type) {
+    margin-bottom: 30px;
+}
+.icon-tray > i {
+    color: white; /*var(--text-color);*/
+    text-align: center;
+    object-fit: contain;
+    aspect-ratio: 1;
+    width: 100%;
+}
+.icon-tray > img {
+    width: 100%;
+    filter: invert(100%); /* invert(52.34375%);*/
+    pointer-events: none;
+    user-select: none;
+}

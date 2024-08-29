@@ -1,0 +1,18 @@
+.featured-project {
+    overflow: hidden;
+    padding: 0;
+}
+
+.featured-project > h1 {
+    margin: 10px 15px;
+}
+
+.featured-project > a {
+    display: block;
+    width: 100%;
+    border-top: var(--border);
+}
+
+.featured-project > a > h1 {
+    margin: 10px 15px;
+}
