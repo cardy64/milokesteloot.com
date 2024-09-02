@@ -2,6 +2,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: var(--gray-med);
+    overflow-x: hidden;
 }
 
 .grid {
@@ -20,7 +21,7 @@ body {
     border: var(--border);
     border-radius: 11px;
     padding: var(--box-deco-padding-vert) var(--box-deco-padding-horiz);
-    background-color: #111111;
+    background-color: var(--gray-dark);
     margin: 10px;
 }
 .box-width-1 {
