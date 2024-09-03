@@ -1,0 +1,16 @@
+.box-deco:has(.milo-img) {
+    position: relative;
+}
+
+.milo-img {
+    position: absolute;
+    aspect-ratio: 1;
+    width: 200px;
+    top: 50%;
+    left: -38px;
+    translate: -100% -50%;
+    border-radius: 1000px;
+    border: var(--border);
+    padding: 10px;
+    background-color: var(--gray-dark);
+}
