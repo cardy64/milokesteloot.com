@@ -1,0 +1,80 @@
+@font-face {
+    font-family: ubuntuMonoRegular;
+    src: url(../assets/Ubuntu_Mono/UbuntuMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: ubuntuMonoItalic;
+    src: url(../assets/Ubuntu_Mono/UbuntuMono-Italic.ttf);
+}
+
+@font-face {
+    font-family: ubuntuMonoBold;
+    src: url(../assets/Ubuntu_Mono/UbuntuMono-Bold.ttf);
+}
+
+html {
+    counter-reset: numbers;
+}
+
+header {
+    font-size: 60px;
+    font-family: ubuntuMonoBold, monospace;
+    font-weight: bold;
+    color: white;
+
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    translate: -313px 0;
+
+    white-space: nowrap;
+
+    margin: 120px 0 80px;
+}
+
+header .comment {
+    color: rgba(255, 255, 255, 0.18);
+    font-family: ubuntuMonoItalic, monospace;
+}
+
+header p::before {
+    content: counter(numbers);
+    counter-increment: numbers;
+    color: rgba(255, 255, 255, 0.07);
+    font-family: ubuntuMonoBold, monospace;
+    position: absolute;
+    transform: translateX(-50px);
+    display: block;
+}
+
+header p:last-of-type {
+    animation: blink linear 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        color: inherit;
+    }
+    49% {
+        color: inherit;
+    }
+    50% {
+        color: transparent;
+    }
+    100% {
+        color: transparent;
+    }
+}
+
+header::after {
+    box-sizing: content-box;
+    content: "";
+    width: 620px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.18);
+    display: block;
+    padding: 0 50px;
+    transform: translateX(-50px);
+    margin-top: 20px;
+}

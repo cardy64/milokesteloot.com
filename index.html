@@ -5,6 +5,7 @@
     <title>Milo Kesteloot</title>
     <link rel="stylesheet" type="text/css" href="css-files/vars.css">
     <link rel="stylesheet" type="text/css" href="css-files/defaults.css">
+    <link rel="stylesheet" type="text/css" href="css-files/header.css">
     <link rel="stylesheet" type="text/css" href="css-files/box-styles.css">
     <link rel="stylesheet" type="text/css" href="css-files/about-me.css">
     <link rel="stylesheet" type="text/css" href="css-files/icon-tray.css">
@@ -14,87 +15,92 @@
     <script src="icon-resize.js"></script>
 </head>
 <body>
-        <div class="grid grid-left">
-            <div class="box-deco box-width-1 box-thick-padding">
-                <h1>About Me</h1>
-                <p>
-                    I’m a college student currently double majoring in Computer Science and Game Design and University of California Santa Cruz.<br>
-                    I’ve been coding for over eight years, learning how to make games, tools, and procedural art.
-                </p>
-                <img class="milo-img" src="assets/mk.png" alt="A picture of Milo Kesteloot.">
-            </div>
-            <div class="featured-project box-deco box-width-2">
-                <h1>Featured Project</h1>
-                <a style="background: linear-gradient(45deg, rgba(109,6,149,1) 0%, rgba(198,33,230,1) 100%); aspect-ratio: 16/9;">
-                    <h1>Game Engine</h1>
-                </a>
-            </div>
-            <div class="box-deco box-width-1">
-                <h1>Past Experience</h1>
-                <p>
+    <header>
+        <p>Milo</p>
+        <p>Kesteloot</p>
+        <p class="comment">// GitHub Itch</p>
+        <p class="comment">// LinkedIn Email</p>
+        <p>_</p>
+    </header>
+    <div class="grid grid-left">
+        <div class="box-deco box-width-1 box-thick-padding">
+            <h1>About Me</h1>
+            <p>
+                I’m a college student currently double majoring in Computer Science and Game Design at the University of California Santa Cruz.<br>
+                I’ve been coding for over eight years, learning how to make games, tools, and procedural art.
+            </p>
+            <img class="milo-img" src="assets/mk.png" alt="A picture of Milo Kesteloot.">
+        </div>
+        <div class="featured-project box-deco box-width-2">
+            <h1>Featured Project</h1>
+            <a style="background: linear-gradient(45deg, rgba(109,6,149,1) 0%, rgba(198,33,230,1) 100%); aspect-ratio: 16/9;">
+                <h1>Game Engine</h1>
+            </a>
+        </div>
+        <div class="box-deco box-width-1">
+            <h1>Past Experience</h1>
+            <p>
 
-                </p>
+            </p>
+        </div>
+    </div>
+    <div class="grid grid-right">
+        <div class="box-deco box-width-1">
+            <h1>Expert Skills</h1>
+            <div class="icon-tray">
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-java"></i>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-unity"></i>
+                <img src="assets/ps-icon.svg" alt="Adobe Photoshop Icon">
+                <img src="assets/ai-icon.svg" alt="Adobe Illustrator Icon">
+            </div>
+            <h1>Proficient With</h1>
+            <div class="icon-tray">
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-java"></i>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-unity"></i>
+                <img src="assets/ps-icon.svg" alt="Adobe Photoshop Icon">
+                <img src="assets/ai-icon.svg" alt="Adobe Illustrator Icon">
             </div>
         </div>
-        <div class="grid grid-right">
-            <div class="box-deco box-width-1">
-                <h1>Expert Skills</h1>
-                <div class="icon-tray">
-                    <i class="fa-brands fa-js"></i>
-                    <i class="fa-brands fa-java"></i>
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <i class="fa-brands fa-unity"></i>
-                    <img src="assets/ps-icon.svg" alt="Adobe Photoshop Icon">
-                    <img src="assets/ai-icon.svg" alt="Adobe Illustrator Icon">
+        <div class="box-deco contact-form box-width-2">
+            <h1>Contact Form</h1>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <textarea class="input" id="name" placeholder=""></textarea>
                 </div>
-                <h1>Proficient With</h1>
-                <div class="icon-tray">
-                    <i class="fa-brands fa-js"></i>
-                    <i class="fa-brands fa-java"></i>
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <i class="fa-brands fa-unity"></i>
-                    <img src="assets/ps-icon.svg" alt="Adobe Photoshop Icon">
-                    <img src="assets/ai-icon.svg" alt="Adobe Illustrator Icon">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <textarea class="input" id="email" placeholder=""></textarea>
                 </div>
-            </div>
-            <div class="box-deco contact-form box-width-2">
-                <h1>Contact Form</h1>
-                <form>
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <textarea class="input" id="name" placeholder=""></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <textarea class="input" id="email" placeholder=""></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea class="input resizeable" id="message" placeholder=""></textarea>
-                    </div>
-                    <div class="form-buttons">
-                        <div class="button">Save Draft</div>
-                        <label class="button">Send Message<input class="hidden" type="checkbox"></label>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="input resizeable" id="message" placeholder=""></textarea>
+                </div>
+                <div class="form-buttons">
+                    <div class="button">Save Draft</div>
+                    <label class="button">Send Message<input class="hidden" type="checkbox"></label>
 
-                    </div>
-                </form>
-            </div>
-            <div class="featured-project box-deco box-width-1">
-                <h1>Resume / CV</h1>
-                <a>
-                    <img src="assets/resume.png" alt="Milo Kesteloot's Resume" style="
-                        width: 100%;
-                        background-color: white;
-                        padding: 25px 25px 60px;
-                        cursor: pointer;
-                        display: block;
-                        ">
-                </a>
-            </div>
+                </div>
+            </form>
         </div>
-
-
+        <div class="featured-project box-deco box-width-1">
+            <h1>Resume / CV</h1>
+            <a>
+                <img src="assets/resume.png" alt="Milo Kesteloot's Resume" style="
+                    width: 100%;
+                    background-color: white;
+                    padding: 25px 25px 60px;
+                    cursor: pointer;
+                    display: block;
+                    ">
+            </a>
+        </div>
+    </div>
 </body>
 </html>
