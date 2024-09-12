@@ -1,6 +1,6 @@
 body {
     background-color: var(--gray-med);
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
 
     display: grid;
     grid-template-rows: auto auto;
@@ -32,6 +32,22 @@ body {
     background-color: var(--gray-dark);
     margin: 10px;
 }
+.box-deco p > a {
+    color: #4c4cd2;
+}
+.box-deco .blurb {
+    /*padding-left: 10px;*/
+    /*border-left: var(--gray-light) 5px solid;*/
+    /*border-radius: 5px;*/
+}
+/*.box-deco .blurb:before {*/
+/*    content: '';*/
+/*    display: block;*/
+/*    !*position: absolute;*!*/
+/*    height: 150px;*/
+/*    width: 5px;*/
+/*    background-color: red;*/
+/*}*/
 .box-width-1 {
     width: var(--box-width-1);
 }

@@ -1,3 +1,7 @@
+:root {
+    --topper-height: 73px;
+}
+
 @font-face {
     font-family: ubuntuMonoRegular;
     src: url(../assets/Ubuntu_Mono/UbuntuMono-Regular.ttf);
@@ -30,7 +34,7 @@ header {
 
     white-space: nowrap;
 
-    margin: 120px 0 80px;
+    margin: 150px 0 80px;
 }
 
 header .comment {
@@ -77,4 +81,33 @@ header::after {
     padding: 0 50px;
     transform: translateX(-50px);
     margin-top: 20px;
+}
+
+.website-topper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    /*background-color: green;*/
+    margin-bottom: 30px;
+    align-items: end
+}
+.website-topper::before {
+    content: "";
+    width: 100vw;
+    height: var(--topper-height);
+    background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.18), rgba(0, 72, 255, 0.2));
+    display: block;
+    position: absolute;
+    top: 0;
+}
+.website-topper > svg {
+    height: calc(42px + var(--topper-height));
+    translate: 0 38px;
+}
+.website-topper polygon {
+    fill: var(--gray-med);
+    /*fill: rgba(255, 0, 0, 0.47);*/
+}
+.website-topper > svg:nth-child(3) {
+    margin-left: -1px;
 }
